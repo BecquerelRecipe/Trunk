@@ -1,5 +1,6 @@
 import re
 
+
 def ingredients_parser(stringToSearch):
 # Lets use a regular expression to match a date string. Ignore
 # the output since we are just testing if the regex matches.
@@ -21,7 +22,9 @@ def ingredients_parser(stringToSearch):
             else:
                 productQuantity.append('')
         print(productQuantity)
+
     else:
         # If re.search() does not match, then None is returned
         print("The regex pattern does not match. :(")
+
 
